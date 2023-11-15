@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon info</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="nomedia">
+        <p>By <span>@PhucThanhh</span></p>
+    </div>
+    <div class="director">
+        <img src="down-arrow.png">
+        <p>Scroll down</p>
+    </div>
+    <div class="container">
+        <div class="content">
+
+            <div class="content-left">  
+                <div class="search">
+                    <input type="text" id="search" onchange="submit()">
+                    <label>Search Pokemon:</label>
+                </div>
+                <div class="info">
+                    <p>Name: <span class="PokeName">__</span></p>
+                    <p>Type: <span class="PokeType">__</span></p>
+                    <p>Height: <span class="PokeHeight">__</span> m</p>
+                    <p>Weight: <span class="PokeWeight">__</span> lbs</p>
+                    <p>Bio: <span class="PokeBio">__</span></p>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <img class="PokeImg" src="">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
