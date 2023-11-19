@@ -26,14 +26,16 @@ function submit() {
         weight.innerHTML = Math.round(lbs *= 2.20462);
         
         img.src = data.sprites.versions['generation-v']['black-white'].animated.front_default
-        bio.innerHTML = "Can't find description:("
-        // var getbio = data.species.url
-        // fetch(getbio)
 
-        // .then(response => response.json())
+        var getabilities = data.abilities[0].ability.url
+        fetch(getabilities)
 
-        // .then (data => {
-        //     console.log(data)
-        // })
+        .then(response => response.json())
+
+        .then (data => {
+            console.log(data)
+            var getbio = data.effect_entries[1].short_effect
+            bio.innerHTML = getbio
+        })
     })
 }
